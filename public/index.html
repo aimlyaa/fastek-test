@@ -1,0 +1,46 @@
+<!doctype html>
+<!-- jq -->
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+<!-- собственный скрипт -->
+<script language="JavaScript" type="text/javascript" src="index.js"></script>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Test</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+<label for="fileInputType">Тип файлового поля:</label>
+<select name="fileInputType" id="fileInputType" onchange="updateFileInputType()">
+  <option value="single">Единичное</option>
+  <option value="many">Множественное</option>
+</select> 
+
+<h3>Загрузить файл:</h3>  
+<div class="upload-form">
+  <input type='file' id="getFileInput" hidden onchange="processSelectedFiles(this)">
+  
+  <div class="inputFileBlcok">
+    <input type="text" id="selectedFileInput" size="30" disabled>
+    <span>
+      <button id="getFileButton" onclick="document.getElementById('getFileInput').click()"></button>
+    </span>
+  </div>
+
+  <br style="clear:both" />
+  <button id="uploadFileButton" onclick="uploadFiles()">Загрузить</button>
+</div>
+
+<br style="clear:both" />
+<h3>Файлы на сервере:</h3>
+<div class="filesBlock" id="filesDiv">
+</div>
+</body>
+</html>

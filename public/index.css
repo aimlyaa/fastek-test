@@ -1,0 +1,66 @@
+.upload-form {
+  float: left;
+  overflow: auto;
+  margin: 10px;
+  text-align: center;
+}
+
+.inputFileBlcok {
+  border: 1px solid #e9ecf2;
+  float: left;
+  overflow: auto;
+  padding-left: 5px;
+  margin: 10px;
+}
+.inputFileBlcok > input {
+  font-size: 20px;
+  -ms-transform: translateY(-55%);
+  transform: translateY(-55%);
+}
+.inputFileBlcok > span {
+  display: inline-block;
+}
+
+#getFileButton {
+  display:block;
+  background-image: url(/src/clip.png);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  border: none;
+  cursor: pointer;
+  height: 48px;
+  width:  32px;
+}
+
+#uploadFileButton {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.filesBlock {
+  text-align: center;
+  border: 1px solid #e9ecf2;
+  width: 412px;
+  margin: 10px;
+  padding-left: 6px;
+}
+.filesBlock > table { 
+    width: 400px;
+    border-collapse: collapse;
+    margin-bottom: 10px; 
+    margin-top: 10px;
+}
+.remove-file-button { 
+    color: red;
+    border: none;
+    cursor: pointer;
+    background-color: #e9ecf2;
+}
+
+tr { border: 1px solid #e9ecf2; }
+
+a:link { color: #646464; }
+a:visited { color: #646464; }
+a:hover { color: black; }
+a:active { color: #9EFC4A; }
